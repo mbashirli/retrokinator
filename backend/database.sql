@@ -18,3 +18,4 @@ CREATE TABLE Question (
     q_id SERIAL PRIMARY KEY,
     body TEXT
 );
+
