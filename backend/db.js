@@ -4,7 +4,7 @@ const PASSWORD = process.env.PASSWORD;
 
 const pool = new Pool({
   user: "postgres",
-  password: `${PASSWORD}`,
+  password: `04072001s`,
   host: "localhost",
   port: 5432,
   database: "retrokinator",

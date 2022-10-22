@@ -2,12 +2,14 @@ const express = require("express");
 const cors = require("cors");
 const pool = require("./db");
 const path = require("path");
+const bodyParser = require("body-parser");
 
 const app = express();
 
 // middleware functions
 app.use(cors());
 app.use(express.json());
+app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use("/api/foods", require("./routes/foodRoutes"));
