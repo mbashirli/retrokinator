@@ -1,0 +1,79 @@
+:root { 
+  --dark: #212529; 
+  --oragne: #f8a200;
+  --dark-brown: #1c1201;
+  --grey: #525150;
+}
+
+body { 
+  background-color: #fff;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.Header {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  flex-direction:column;
+  width: 100%;
+  background-image: url("https://hellonesh.io/app/themes/nesh/assets/img/hero-image.webp")
+}
+
+.logo{ 
+  width:400px;
+  height: 300px; 
+}
+
+#transparent { 
+  background: transparent;
+}
