@@ -23,6 +23,3 @@ CREATE TABLE Question (
 INSERT INTO food ( f_name, f_description) VALUES ('Pasta', 'A dish originally from Italy consisting of dough made from durum wheat and water, extruded or stamped into various shapes and typically cooked in boiling water.');
 INSERT INTO food ( f_name, f_description) VALUES ( 'Pizza', 'A dish made typically of flattened bread dough spread with a savory mixture usually including tomatoes and cheese and often other toppings and baked. ');
 INSERT INTO food (f_name, f_description) VALUES ( 'Pasta', 'Italian delight');
-
-
-
