@@ -1,14 +1,14 @@
-import gran from "../assets/gran.png"
-
+import musicPath from "../assets/sweet_dreams.mp3"
 export default function Navbar() {
     return (
+        <>
         <div className="navbar">
-            <div className="left">
-                <div className="gran">
-                    <img src={gran}/>
-                </div>
-            </div>
-            <div className="right"></div>
+<audio controls className="nes-badge">
+  <source src={musicPath} type="audio/mpeg"/>
+  Your browser does not support the audio tag.
+        </audio>
+        
         </div>
+        </>
     );
 }

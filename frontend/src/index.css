@@ -18,8 +18,6 @@ a:hover {
   color: #535bf2;
 }
 
-
-
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -71,11 +69,6 @@ button:focus-visible {
 
 }
 
-.logo{ 
-  width:400px;
-  height: 300px; 
-}
-
 #transparent { 
   background: transparent;
 }
@@ -90,30 +83,31 @@ button:focus-visible {
   margin: 10px 0px;
 }
 
-.question h2 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+#typedtext {
+  overflow: hidden; 
+  border-right: .15em solid orange; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
   animation: 
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
   color: white;
-  font-size: 30px;
+  font-size: 25px;
+  text-shadow: 2px 2px darkslateblue;
 }
 
-/* The typing effect */
+
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange; }
 }
+
 .header-video { 
   object-fit: cover;
   position: fixed;
@@ -123,3 +117,65 @@ button:focus-visible {
   height: 100vh;
 }
 
+.question-block {
+  background-color: rgba(111, 84, 208, 0.6);
+  border: 3px solid rgba(53, 6, 139, 0.87);
+  border-radius: 5px;
+  padding: 50px 30px;
+  max-width: 80%;
+}
+
+#typedtext {
+  margin-bottom: 30px;
+}
+
+.answers {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.answers button {
+  margin: 10px;
+}
+
+.answers form {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.head-intro {
+  max-width: 80%;
+}
+
+.title {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.desc {
+  color: white;
+  font-size: 12px;
+  margin: 30px;
+  margin-bottom: 0px;
+}
+
+.title-button {
+  display: flex;
+  background-color: rgba(111, 84, 208, 0.6);
+  border: 3px solid rgba(53, 6, 139, 0.87);
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 60%;
+  padding: 0px;
+}
+
+#play-btn {
+  width: 200px;
+  aspect-ratio: 3 / 1;
+  font-size: 20px;
+  margin: 30px;
+}
