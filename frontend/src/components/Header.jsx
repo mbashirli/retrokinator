@@ -10,9 +10,6 @@ export default function Header() {
     return (
     <>
     <video src={bgVideo} autoPlay playsInline loop muted className="header-video"></video>
-            {/* <video className="header-video"  loop>
-                <source type="video/mp4" src={bgVideo}/>
-            </video> */}
             <header className="Header">
                 {!flag ? <nav><img src={logo} className="logo" alt="" /></nav> : ""}
                 {!flag ? <button className="nes-btn is-success" onClick={() => setFlag(!flag)}>Play</button> : ""}
