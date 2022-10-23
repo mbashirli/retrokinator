@@ -8,3 +8,4 @@ export default defineConfig({
     port: 8000,
   },
 });
+

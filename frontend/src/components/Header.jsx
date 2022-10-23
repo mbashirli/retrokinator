@@ -1,50 +1,21 @@
 import {useState} from "react";
 import logo from "../assets/logo.png"
-import gramofon from "../assets/gran.png"
-export default function Header() { 
+import gramofon from "../assets/gran.png";
+import PlayScreen from "./PlayScreen"
+import Header_intro from "./Header_intro";
+import bgVideo from "../assets/home-hero.mp4"
+
+export default function Header() {
+    const [flag, setFlag] = useState(false); 
     return (
-        <>
+    <>
+    <video src={bgVideo} autoPlay playsInline loop muted className="header-video"></video>
             <header className="Header">
-                <nav>
-                    <img src={logo} className="logo" alt="" />
-                </nav>
-                <button className="nes-btn is-success">Play</button>
-                <div className="nes-container with-title">
-                    <h3 className="title">Radios</h3>
-                    <div className="radios">
-                        <label>
-                            <input type="radio" className="nes-radio" />
-                            <span>Yes</span>
-                        </label>
-                        <label>
-                            <input type="radio" className="nes-radio" />
-                            <span>No</span>
-                        </label>
-                    </div>
-                    <div className="radios" >
-                        <label>
-                            <input type="radio" className="nes-radio" />
-                            <span>Yes</span>
-                        </label>
-                        <label>
-                            <input type="radio" className="nes-radio" />
-                            <span>No</span>
-                        </label>
-                    </div>
+                <div className="title-button">
+                    { !flag ? <Header_intro/> : "" }
+                    { !flag ? <button id="play-btn" className="nes-btn is-success" onClick={() => setFlag(!flag)}>Play</button> : ""}
                 </div>
-                <div className="nes-container is-dark with-title" id="transparent">
-                    <h3 className="title">Recipe list</h3>
-                    <div className="lists"> 
-                        <ul className="nes-list is-circle">
-                            <li>Lamb</li>
-                            <li>Rice</li>
-                            <li>Tahini</li>
-                            <li>Hummus</li>
-                            <li>Potatoes</li>
-                        </ul>
-                    </div>
-                </div>
-                {/* <progress className="nes-progress is-success" value="50" max="100"></progress> */}
+                { flag ? <PlayScreen/> : "" }
             </header>
         </>
     );
