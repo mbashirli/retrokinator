@@ -69,11 +69,6 @@ button:focus-visible {
 
 }
 
-.logo{ 
-  width:400px;
-  height: 300px; 
-}
-
 #transparent { 
   background: transparent;
 }
@@ -147,4 +142,40 @@ button:focus-visible {
 .answers form {
   padding-left: 50px;
   padding-right: 50px;
+}
+
+.head-intro {
+  max-width: 80%;
+}
+
+.title {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.desc {
+  color: white;
+  font-size: 12px;
+  margin: 30px;
+  margin-bottom: 0px;
+}
+
+.title-button {
+  display: flex;
+  background-color: rgba(111, 84, 208, 0.6);
+  border: 3px solid rgba(53, 6, 139, 0.87);
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 60%;
+  padding: 0px;
+}
+
+#play-btn {
+  width: 200px;
+  aspect-ratio: 3 / 1;
+  font-size: 20px;
+  margin: 30px;
 }
