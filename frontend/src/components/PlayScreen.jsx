@@ -3,15 +3,15 @@ export default function PlayScreen() {
         <>
             <div className="question-block">
                 <div className="question">
-                    <h2>Do you like spicy food?</h2>
+                    <div id="typedtext">Which of the following <br/> tastes do you desire right now?</div>
                 </div>
 
                 <div className="answers">
                     <form action="submit">
-                        <button type="button">A</button>
-                        <button type="button">B</button>
-                        <button type="button">C</button>
-                        <button type="button">D</button>
+                        <button className="nes-btn is-primary" type="button">A. Salty, umami, and sweet</button>
+                        <button className="nes-btn is-warning" type="button">B. Toasted ham</button>
+                        <button className="nes-btn is-success" type="button">C. Grilled chicken</button>
+                        <button className="nes-btn is-error" type="button">D. Something Sweet</button>
                     </form>
                 </div>
             </div>
