@@ -14,7 +14,7 @@ export default function Header() {
             <header className="Header">
             
                 <img src={logo} className="logo" alt="Retrokinator" />;
-                <h3>Retrokinator</h3>
+                <h3>Retrokiator</h3>
             </header>
         </>
     );
