@@ -64,11 +64,11 @@ button:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
+  position : relative;
   padding: 0;
   flex-direction:column;
   width: 100%;
-  background-image: url("https://hellonesh.io/app/themes/nesh/assets/img/hero-image.webp");
-  background-size: cover;
+
 }
 
 .logo{ 
@@ -114,3 +114,12 @@ button:focus-visible {
   from, to { border-color: transparent }
   50% { border-color: orange; }
 }
+.header-video { 
+  object-fit: cover;
+  position: fixed;
+  right:0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
