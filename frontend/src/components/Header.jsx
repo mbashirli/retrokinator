@@ -11,9 +11,10 @@ export default function Header() {
     <>
     <video src={bgVideo} autoPlay playsInline loop muted className="header-video"></video>
             <header className="Header">
-                {!flag ? <nav><img src={logo} className="logo" alt="" /></nav> : ""}
-                {!flag ? <button className="nes-btn is-success" onClick={() => setFlag(!flag)}>Play</button> : ""}
-                { !flag ? <Header_intro/> : "" }
+                <div className="title-button">
+                    { !flag ? <Header_intro/> : "" }
+                    { !flag ? <button id="play-btn" className="nes-btn is-success" onClick={() => setFlag(!flag)}>Play</button> : ""}
+                </div>
                 { flag ? <PlayScreen/> : "" }
             </header>
         </>
