@@ -3,11 +3,13 @@ export default function Navbar() {
     return (
         <>
         <div className="navbar">
-<audio controls className="nes-badge">
+                <div>
+                <audio controls className="nes-badge" width="100" height="100">
   <source src={musicPath} type="audio/mpeg"/>
   Your browser does not support the audio tag.
         </audio>
         
+                </div>
         </div>
         </>
     );
