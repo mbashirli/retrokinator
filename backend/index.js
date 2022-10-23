@@ -1,19 +1,21 @@
 const express = require("express");
-const app = express();
 const cors = require("cors");
 const pool = require("./db");
+const path = require("path");
+const bodyParser = require("body-parser");
 
-// Middleware
+const app = express();
+
+// middleware functions
 app.use(cors());
-app.use(express.json()); // req.body
+app.use(express.json());
+app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: false }));
 
-// Routes
+app.use("/api/foods", require("./routes/foodRoutes"));
 
-
-
-
-const PORT = 5000;
+const PORT = 4000;
 
 app.listen(PORT, () => {
-    console.log(`Server has started at the port ${PORT}`);
+  console.log(`Server has started at the port ${PORT}`);
 });

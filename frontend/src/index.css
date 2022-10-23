@@ -67,8 +67,7 @@ button:focus-visible {
   padding: 0;
   flex-direction:column;
   width: 100%;
-  /* background-image: url("https://hellonesh.io/app/themes/nesh/assets/img/hero-image.webp"); */
-  background-size:cover;
+
 }
 
 .logo{ 
@@ -88,3 +87,4 @@ button:focus-visible {
   width: 100vw;
   height: 100vh;
 }
+
