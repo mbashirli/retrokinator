@@ -1,7 +1,10 @@
+import Result from "./Result"
+
 export default function PlayScreen() {
+    let res = false;
     return (
         <>
-            <div className="question-block">
+            {res ? <div className="question-block">
                 <div className="question">
                     <div id="typedtext">Which of the following <br/> tastes do you desire right now?</div>
                 </div>
@@ -14,7 +17,7 @@ export default function PlayScreen() {
                         <button className="nes-btn is-error" type="button">D. Something Sweet</button>
                     </form>
                 </div>
-            </div>
+            </div> : <Result/> }
         </>
     );
 }

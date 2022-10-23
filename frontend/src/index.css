@@ -183,6 +183,31 @@ button:focus-visible {
 
 }
 
+.card {
+  background-image: url("./assets/paper.jpg");
+  border: 2px solid black;
+  position: absolute;
+  width: 45%;
+  height: 70%;
+  margin-top: 0px;
+  border-radius: 10px;
+}
+
+
+.recipe-title {
+  padding: 15px;
+  font-weight: bolder;
+}
+
+.card p {
+  font-size: 15px;
+  width: 90%;
+  margin: auto;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+/* ------------------ */
 
 audio { 
   position: absolute;
@@ -209,11 +234,6 @@ audio::-webkit-media-controls-rewind-button,
 audio::-webkit-media-controls-return-to-realtime-button,
 audio::-webkit-media-controls-toggle-closed-captions-button { 
   background-color: rgba(111, 84, 208, 0.6);
-
-}
-
-.card {
-  background-color: whitesmoke;
 
 }
 
