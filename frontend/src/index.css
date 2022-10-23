@@ -120,6 +120,17 @@ button:focus-visible {
   right:0;
   bottom: 0;
   width: 100vw;
+  z-index: -1;
   height: 100vh;
 }
 
+.navbar { 
+  z-index: 1;
+} 
+
+
+
+
+.marginalno { 
+  margin-right:28px;
+}

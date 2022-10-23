@@ -2,8 +2,8 @@ export default function PlayScreen() {
     return (
         <>
             <div className="question-block">
-                <div className="question">
-                    <h2>Do you like spicy food?</h2>
+                <div className="question ">
+                    <h2>Which of the following tastes do you desire right now?</h2>
                 </div>
 
                 <div className="answers">
