@@ -24,7 +24,10 @@ export default function Header() {
             <button
               id="play-btn"
               className="nes-btn is-success"
-              onClick={() => setFlag(!flag)}
+              onClick={() => {
+                setFlag(!flag);
+                callAPI();
+              }}
             >
               Play
             </button>
