@@ -1,9 +1,11 @@
+import gran from "../assets/gran.png"
+
 export default function Navbar() {
-    render (
-        <div class="navbar">
+    return (
+        <div className="navbar">
             <div className="left">
-                <div className="logo">
-                    Logo
+                <div className="gran">
+                    <img src={gran}/>
                 </div>
             </div>
             <div className="right"></div>
