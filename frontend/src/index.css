@@ -180,6 +180,7 @@ button:focus-visible {
   aspect-ratio: 3 / 1;
   font-size: 20px;
   margin: 30px;
+
 }
 
 
@@ -208,4 +209,5 @@ audio::-webkit-media-controls-rewind-button,
 audio::-webkit-media-controls-return-to-realtime-button,
 audio::-webkit-media-controls-toggle-closed-captions-button { 
   background-color: rgba(111, 84, 208, 0.6);
+
 }
