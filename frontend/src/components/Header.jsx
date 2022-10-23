@@ -13,7 +13,7 @@ export default function Header() {
             </video> */}
             <header className="Header">
             
-                <img src={logo} className="logo" alt="Retrokinator" />
+                <img src={logo} className="logo" alt="Retrokinator" />;
                 <h3>Retrokinator</h3>
             </header>
         </>
